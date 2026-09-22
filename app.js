@@ -53,6 +53,23 @@ app.get('/contact', (req, res) => {
   });
 
 
+  // faq route
+app.get('/faq', (req, res) => {
+    state={faq : true}
+    head={title:"faq - Week 1"}
+    res.render('faq', { state, head});
+    console.log('faq')
+  });
+
+    // for parents route
+app.get('/parents', (req, res) => {
+    state={parents : true}
+    head={title:"parents - Week 1"}
+    res.render('parents', { state, head});
+    console.log('parents')
+  });
+
+
 // Start the server
 app.listen(3000, () => {
   console.log('Server is running on port 3000');

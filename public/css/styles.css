@@ -18,3 +18,14 @@ nav li {
     padding:0.5em;
 
 }
+/* from 1st year proj */
+.nav-links { display: flex; gap: 32px; }
+.nav-links a { 
+    color: var(--text-muted); 
+    text-decoration: none; 
+    font-size: 15px; 
+    font-weight: 500; 
+    transition: var(--transition); 
+}
+
+.nav-links a:hover, .nav-links a.active { color: var(--primary); }
