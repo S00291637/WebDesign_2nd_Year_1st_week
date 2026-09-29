@@ -31,7 +31,7 @@ app.set('views',  'views');
 app.use(express.static('public'));
 
 // home page or home route
-app.get('/', (req, res) => {
+app.get('/index', (req, res) => {
 
   // set active for navigation
   state={home:true}
@@ -67,6 +67,13 @@ app.get('/parents', (req, res) => {
     head={title:"parents - Week 1"}
     res.render('parents', { state, head});
     console.log('parents')
+  });
+
+app.get('/pricing', (req, res) => {
+    state={pricing : true}
+    head={title:"Pricing - Week 1"}
+    res.render('pricing', { state, head});
+    console.log('pricing')
   });
 
 
